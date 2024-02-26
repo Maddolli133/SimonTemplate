@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuScreen));
             this.exitButton = new System.Windows.Forms.Button();
             this.newButton = new System.Windows.Forms.Button();
+            this.hardButton = new System.Windows.Forms.Button();
+            this.mediumButton = new System.Windows.Forms.Button();
+            this.easyButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // exitButton
@@ -69,17 +72,54 @@
             this.newButton.UseVisualStyleBackColor = false;
             this.newButton.Click += new System.EventHandler(this.newButton_Click);
             // 
-            // MainScreen
+            // hardButton
+            // 
+            this.hardButton.BackColor = System.Drawing.Color.Firebrick;
+            this.hardButton.Location = new System.Drawing.Point(4, 152);
+            this.hardButton.Name = "hardButton";
+            this.hardButton.Size = new System.Drawing.Size(30, 23);
+            this.hardButton.TabIndex = 20;
+            this.hardButton.Text = "H";
+            this.hardButton.UseVisualStyleBackColor = false;
+            this.hardButton.Click += new System.EventHandler(this.hardButton_Click);
+            // 
+            // mediumButton
+            // 
+            this.mediumButton.BackColor = System.Drawing.Color.Orange;
+            this.mediumButton.Location = new System.Drawing.Point(4, 194);
+            this.mediumButton.Name = "mediumButton";
+            this.mediumButton.Size = new System.Drawing.Size(30, 23);
+            this.mediumButton.TabIndex = 21;
+            this.mediumButton.Text = "M";
+            this.mediumButton.UseVisualStyleBackColor = false;
+            this.mediumButton.Click += new System.EventHandler(this.mediumButton_Click);
+            // 
+            // easyButton
+            // 
+            this.easyButton.BackColor = System.Drawing.Color.LimeGreen;
+            this.easyButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.easyButton.Location = new System.Drawing.Point(4, 240);
+            this.easyButton.Name = "easyButton";
+            this.easyButton.Size = new System.Drawing.Size(30, 23);
+            this.easyButton.TabIndex = 22;
+            this.easyButton.Text = "E";
+            this.easyButton.UseVisualStyleBackColor = false;
+            this.easyButton.Click += new System.EventHandler(this.easyButton_Click);
+            // 
+            // MenuScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Controls.Add(this.easyButton);
+            this.Controls.Add(this.mediumButton);
+            this.Controls.Add(this.hardButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.newButton);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "MainScreen";
+            this.Name = "MenuScreen";
             this.Size = new System.Drawing.Size(301, 300);
             this.ResumeLayout(false);
 
@@ -89,5 +129,8 @@
 
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button newButton;
+        private System.Windows.Forms.Button hardButton;
+        private System.Windows.Forms.Button mediumButton;
+        private System.Windows.Forms.Button easyButton;
     }
 }

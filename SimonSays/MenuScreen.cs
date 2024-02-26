@@ -19,12 +19,29 @@ namespace SimonSays
         private void newButton_Click(object sender, EventArgs e)
         {
             //TODO: remove this screen and start the GameScreen
+            Form1.ChangeScreen(this, new GameScreen());
         }
 
 
         private void exitButton_Click(object sender, EventArgs e)
         {
             //TODO: end the application
+            Application.Exit();
+        }
+
+        private void hardButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mediumButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void easyButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
